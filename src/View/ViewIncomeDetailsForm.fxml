@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ViewIncomeDetailsForm" prefHeight="660.0" prefWidth="545.0" style="-fx-background-color: #fffcc5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewIncomeDetailsFormController">
+   <children>
+      <AnchorPane prefHeight="106.0" prefWidth="544.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/hotelLogo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="145.0" layoutY="14.0" prefHeight="62.0" prefWidth="387.0" text="Hotel Blue Ocean" textFill="#4a0e6f">
+               <font>
+                  <Font name="System Italic" size="47.0" />
+               </font>
+            </Label>
+            <Separator layoutX="144.0" layoutY="82.0" prefHeight="3.0" prefWidth="379.0" style="-fx-background-color: #4a0e6f;" />
+            <Label layoutX="145.0" layoutY="92.0" prefHeight="21.0" prefWidth="377.0" text="Email-hotelblueocean@gmail.com | HotLine-0113458976" textFill="#160a72" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="143.0" prefHeight="27.0" prefWidth="184.0" text="| View Income Details |" textFill="#181575">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="36.0" layoutY="199.0" prefHeight="338.0" prefWidth="474.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="25.0" layoutY="57.0" prefHeight="27.0" prefWidth="114.0" text="View Income">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="55.0" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #3498db;" text="Search" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <DatePicker layoutX="139.0" layoutY="55.0" prefHeight="31.0" prefWidth="156.0" promptText="Select Date" />
+            <ImageView fitHeight="157.0" fitWidth="207.0" layoutX="25.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Barchart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="121.0" fitWidth="200.0" layoutX="245.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Piechart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="370.0" layoutY="563.0" onAction="#BackToManageSystemForm" prefHeight="41.0" prefWidth="131.0" style="-fx-background-color: #2ecc71;" text="Print Record " textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="563.0" onAction="#BackToManageSystem" prefHeight="41.0" prefWidth="131.0" style="-fx-background-color: #34495e;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

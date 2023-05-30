@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RoomReservationApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RoomReservationApp_jar</output-path>
+    <root id="archive" name="RoomReservationApp.jar">
+      <element id="module-output" name="RoomReservationApp" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Lib/jfoenix-8.0.8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
